@@ -11,7 +11,7 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://zqlngu.sbs/?L1N1YnNjcmlwdGlvbi9DbGFzaD9zaWQ9MTM5MDYmdG9rZW49MmF1cUNkTzRlZWsmbW09MjM5OTImM2IxMWU2YmYwNjU1NDMyN2E3ZGJiOTFhOGE4Ng=="
+    url: "https://zqlngu.sbs/?L1N1YnNjcmlwdGlvbi9DbGFzaD9zaWQ9MTM5MDYmdG9rZW49MmF1cUNkTzRlZWsmbW09MjM5OTImNzFmNw=="
 
   provider2:
     <<: *p
@@ -88,6 +88,18 @@ proxies:
 proxy-groups:
   - {name: 默认, type: select, proxies: [自动选择, 直连, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 全部节点]}
   - {name: dns, type: select, proxies: [自动选择, 默认, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 全部节点]}
+  - {name: Google, <<: *pr}
+  - {name: Telegram, <<: *pr}
+  - {name: Twitter, <<: *pr}
+  - {name: Pixiv, <<: *pr}
+  - {name: ehentai, <<: *pr}
+  - {name: 哔哩哔哩, <<: *pr}
+  - {name: 哔哩东南亚, <<: *pr}
+  - {name: 巴哈姆特, <<: *pr}
+  - {name: YouTube, <<: *pr}
+  - {name: NETFLIX, <<: *pr}
+  - {name: Spotify, <<: *pr}
+  - {name: Github, <<: *pr}
   - {name: 国内, type: select, proxies: [直连, 默认, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 全部节点, 自动选择]}
   - {name: 其他, <<: *pr}
 
