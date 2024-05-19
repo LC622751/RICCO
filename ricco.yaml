@@ -101,7 +101,6 @@ proxy-groups:
 
 rules:
   - GEOIP,lan,直连,no-resolve
-  - GEOSITE,CN,国内
   - GEOSITE,geolocation-!cn,其他
   - GEOIP,CN,国内
   - MATCH,其他
