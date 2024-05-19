@@ -11,7 +11,7 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www
 proxy-providers:
   provider1:
     <<: *p
-    url: "https://zqlngu.sbs/?L1N1YnNjcmlwdGlvbi9DbGFzaD9zaWQ9MTM5MDYmdG9rZW49MmF1cUNkTzRlZWsmbW09MjM5OTImNzFmNw=="
+    url: "https://zqlngu.sbs/?L1N1YnNjcmlwdGlvbi9DbGFzaD9zaWQ9MTM5MDYmdG9rZW49MHFBZHhWUGF5dWgmbW09MjM5OTImYzI4NmYyM2M1NA=="
 
   provider2:
     <<: *p
